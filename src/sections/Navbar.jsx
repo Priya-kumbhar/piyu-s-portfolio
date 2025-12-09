@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-
+import { motion } from "motion/react";
 
 function Navigation(){
     return <ul className="nav-ul">
@@ -49,12 +49,17 @@ const [isOpen , setIsOpen]=useState(false);
         </div>
        </div>
        {isOpen && (
-        <div className="block overflow-hidden
-         text-center sm:hidden">
+        <motion.div className="block overflow-hidden
+         text-center sm:hidden" 
+         initial={{opacity:0,x:-10}}
+         animate={{opacity:1,x:0}}
+         style={{maxaheight:"100vh"}}
+        transition={{opacity:1}}
+         >
         <nav className="pb-5">
              <Navigation/>
         </nav>
-       </div>
+       </motion.div>
     )}
 
        </div>
