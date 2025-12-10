@@ -19,7 +19,6 @@ function App() {
                    {/* testimonial */}
                       {/* contact */}
                          {/* footer */}
-
     </div>
   )
 }
