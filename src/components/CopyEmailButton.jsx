@@ -19,7 +19,9 @@ const CopyEmailButton = () => {
       onClick={copyToClipboard}
       whileHover={{ y: -5 }}
       whileTap={{ scale: 1.05 }}
-      className="relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[12 rem] cursor-pointer overflow-hidden"
+      className="relative px-1 py-4 text-sm text-center rounded-full 
+      font-extralight bg-primary w-[12 rem] 
+      cursor-pointer overflow-hidden"
     >
       <AnimatePresence mode="wait">
         {copied ? (
@@ -31,12 +33,14 @@ const CopyEmailButton = () => {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.1, ease: "easeInOut" }}
           >
-            <img src="assets/copy-done.svg" className="w-5" alt="copy Icon" />
+            <img src="assets/copy-done.svg"
+             className="w-5" alt="copy Icon" />
             Email has Copied
           </motion.p>
         ) : (
           <motion.p
-            className="flex items-center justify-center gap-2"
+            className="flex items-center 
+            justify-center gap-2"
             key="copy"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

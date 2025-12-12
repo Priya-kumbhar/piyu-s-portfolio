@@ -4,6 +4,8 @@ import Hero from './sections/Hero';
 import Navbar from './sections/Navbar';
 import About from './sections/About';
 import Projects from './sections/Projects';
+import Experiences from './sections/Experiences';
+import Testimonial from './sections/Testimonial';
 function App() {
   return (
     <div className='container mx-auto-max-w-7xl'>
@@ -11,11 +13,10 @@ function App() {
     <Hero/>
   <About/>
     <Projects/>
-       <section className='min-h-screen'/>
-        <section className='min-h-screen'/>
+    <Experiences/>
+     <Testimonial/>
          <section className='min-h-screen'/>
-                {/* experience */}
-                   {/* testimonial */}
+                  
                       {/* contact */}
                          {/* footer */}
     </div>
