@@ -12,8 +12,12 @@ const Contact = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
-    
-  };
+      };
+    const handleSubmit=(e)=>{
+      e.preventDefault();
+      console.log(formData);
+    };
+
 
   return (
     <section className="relative flex items-center c-space section-spacing">
@@ -30,7 +34,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <form className="w-full">
+        <form className="w-full" onSubmit={handleSubmit}>
 
           <div className="mb-5">
             <label htmlFor="name" className="field-label">
